@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>Daniel Nazario's Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="portfolio.css">
+    </head>
+
+    <body>
+        
+        <!--Navbar-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+        </div>
+
+        <!--Breaks inserted to add space between navbar and the first heading-->
+        <br>
+        <br>
+
+        <!--Background video-->
+        <div id="Home">
+            <video autoplay muted loop id="Video">
+                <source src="Images/video.mp4" type="video/mp4">
+                <!--Display message if video fails to run-->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--Video text-->
+        <div class="Video_Text">
+            <h1 class="white-text">Daniel Nazario's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>Go ahead and live with your head held high! No matter how devastated you may be by your own weakness or uselessness…
+                        <br>set your heart ablaze. Grit your teeth, and look straight ahead.
+                    </q>
+                    <br> -Rengoku Kyojuro
+                    <br>
+                    <br> Hello their! My name is Daniel Nazario. Welcome to my portfolio website. Here, I will tell you about my background and experience.
+                    <br>
+                    <br> Thanks for stopping by! 
+                </p>
+            </strong>
+        </div>
+
+        <!--About section-->
+        <div class="Row" id="About">
+            <!--Left column-->
+            <div class="Column_2">
+                <img src="Images/aboutpic.jpg" alt="">
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    <br>I am a current student of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Game Developer Boot Camp, and have so far learned and gained experience in the languages Python, HTML, and CSS.
+                    <br>
+                    <br>Ive recently decided to pursue this career path of game development because of my love for videogames. Since as long ago as i can remember, videogames has played a huge part in my life and has made me the person that i am today.
+                    <br>
+                    <br>If you have questions, or want to collaborate, <a href="#Contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+        <!--End of about section-->
+
+        <!--GitHub section-->
+        <div class="Row" id="GitHub">
+            <!--Left column-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    <br>You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/Danielnaz" target="_blank">My Github profile</a></p>
+                </p>
+            </div>
+            <!--Right column-->
+            <div class="Column_2">
+                <a href="https://github.com/Danielnaz" target="_blank"><img src="Images/GitHub.png" alt="GitHub Logo"></a>
+            </div>
+        </div>
+        <!--End of Github-->
+
+        <!--Contact section-->
+        <div class="Row" id="Contact">
+            <!--Contact image, left column-->
+            <div class="Column_2 Column_tall">
+                <img src="Images/emailpic.jpg" alt="">
+            </div>
+            <!--Contact form, right column-->
+            <div class="Column_1 Column_tall">
+                <h1>Contact</h1>
+                <!--This specifies where and how to send the form data; we are leaving it blank-->
+                <form action="https://formspree.io/f/xzbnzrzw" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here.">
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here.">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here.">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+        <!--End of contact-->
+
+        <!--Footer section-->
+        <footer>
+            <p>
+                <p class="center">&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
+                <br>
+            </p>
+        </footer>
+        <!--End of footer-->
+    </body>
+</html>
